@@ -15,14 +15,15 @@ Although version 1.0.0 did not do what I envisioned yet, I think, it is a good f
 
 ### What does it do?
 **Version 1.0.0**
-The calculator can:
-(a) predict the theorized products given reactants A and B
-(b) give the Lewiss Structure
-(c) methodically name substances
+
+The calculator can:\
+(a) predict the theorized products given reactants A and B\
+(b) give the Lewiss Structure\
+(c) methodically name substances\
 (d) balance the reaction (via chempy)
 
 ### Dependencies
-This project utilizes three main dependencies:
+This project utilizes three main dependencies:\
 (a) [chempy](https://pythonhosted.org/chempy/) - which is a package for solving problems in chemistry. I used it:
 - (i) for the balancing of the chemical equations
 - (ii) for the identification of the compound composition
