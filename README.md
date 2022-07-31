@@ -3,8 +3,7 @@
 ## A simple chemical reaction calculator website
 
 ### Join Info:
-<!--Insert website here, I hope it's something like: -->
-<!-- https://chemica/herokuapp.com/ -->
+https://chemica-chemcal.herokuapp.com/
 
 ### Motivation of Project
 I've been a watching a lot of NileRed's youtube channel for a time now and, with the combination of my 9th Grade Chemistry Teacher's enthusiasm in teaching, I found myself wanting to try and create several compounds with interesting properties. I've never been in a Chem lab personally, so I can only imagine. This "craving" for combining several compounds gave me the thought of a chemical reaction predictor, the main purpose of which is to test a set of reactants and find the respective product that reflects to the real world. There are several reasons why I want to realize this thought.
