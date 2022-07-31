@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Equation Balancer
+{% endblock %}
+
+{% block body %}
+    <div class="my-auto mx-auto" style="width: 90%;">
+        <form action="/balance" class="d-flex justify-content-center mb-3" method="post">
+            <div>
+                <input class="w-100" name="reactants" placeholder="F2 + NaCl" required type="text">
+            </div>
+            →
+            <div class="d-flex justify-content-center" id="products">
+                <input name="products" placeholder="Cl2 + NaF" required type="text">
+                <button class="btn btn-warning" type="submit"><i class="bi bi-radioactive"></i></button>
+            </div>
+        </form>
+        {% if balanced_equation is defined %}
+            <div class="text-center">{{ balanced_equation }}</div>
+        {% endif %}
+    </div>
+{% endblock %}

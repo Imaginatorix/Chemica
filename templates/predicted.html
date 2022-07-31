@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Simple Reaction Calculator
+{% endblock %}
+
+{% block body %}
+    <div class="my-auto mx-auto" style="width: 90%;">
+        <div class="d-flex justify-content-between mb-3" id="equation">
+            <div>
+                <input class="w-100" disabled type="text" value="{{ A }}">
+            </div>
+            +
+            <div>
+                <input class="w-100" disabled type="text" value="{{ B }}">
+            </div>
+            →
+            <div class="d-flex justify-content-center" id="products">
+                <input disabled type="text" value="{{ prod }}">
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <image src="/lewis_api/{{ reac_reagents[0] }}" alt="loading error" width="30%" height="30%"></image>
+            <image src="/lewis_api/{{ reac_reagents[1] }}" alt="loading error" width="30%" height="30%"></image>
+            <image src="/lewis_api/{{ prod_reagents[0] }}" alt="loading error" width="30%" height="30%"></image>
+        </div>
+        <a class="btn btn-primary mt-3" href="/">Try Again</a>
+    </div>
+{% endblock %}

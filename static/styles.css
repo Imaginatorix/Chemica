@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+  --background_theme: hsl(0, 0%, 11%);
+  --box_theme: hsl(0, 0%, 8.6%);
+  --gray_theme: hsl(0, 0%, 18%);
+  --green_theme: hsla(152, 85%, 50%, 0.65);
+  --red_theme: hsla(354, 85%, 50%, 0.65);
+  --text_color_theme: hsl(0, 0%, 100%);
+  --main_color_theme: hsl(216, 98%, 52%);
+  --sub_color_theme: hsl(193, 95%, 68%);
+  --big_size: calc(20px + 2vmin);
+  --normal_size: calc(10px + 2vmin);
+  --bigger_small: calc(6px + 2vmin);
+  --small_size: calc(3px + 2vmin);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Poppins', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  background-color: var(--background_theme);
+  color: var(--text_color_theme);
+  text-align: center;
+  font-size: var(--normal_size) !important;
+  width: 100%;
+  margin-top: 10vh;
+  min-height: 90vh;
+}
+
+.link {
+    cursor: pointer;
+    color: var(--sub_color_theme) !important;
+}
+
+.link:hover {
+  color: var(--main_color_theme) !important;
+}
+
+.title {
+  font-size: var(--big_size);
+}
+
+#equation > div {
+  width: 30%;
+}
+
+#products > input {
+  width: 100%;
+}
+
+#products > button {
+  font-size: var(--bigger_small);
+}
+
+.large_font {
+  font-size: var(--big_size) !important;
+}
+
+.normal_font {
+  font-size: var(--normal_size) !important;
+}
+
+.small_font {
+  font-size: var(--small_size) !important;
+}
+
+.cta-bg {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer-bg {
+  background-color: #1c2331;
+}
+
+.footer-short-hr {
+  width: 60px;
+  background-color: #7c4dff;
+  height: 2px;
+}
+
+/* https://stackoverflow.com/questions/56464777/change-background-color-on-active-tab */
+.nav-tabs > .nav-item > .nav-link {
+  color: white !important;
+}
+
+.nav-tabs > .nav-item > .nav-link.active {
+  background-color: var(--gray_theme) !important;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: -5vh;
+}
+

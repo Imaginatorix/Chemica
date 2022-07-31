@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Simple Reaction Calculator
+{% endblock %}
+
+{% block body %}
+    <div class="my-auto mx-auto" style="width: 90%;">
+        <form action="/" class="d-flex justify-content-between mb-3" id="equation" method="post">
+            <div>
+                <input class="w-100" name="A" placeholder="F2" required type="text">
+            </div>
+            +
+            <div>
+                <input class="w-100" name="B" placeholder="NaCl" required type="text">
+            </div>
+            →
+            <div class="d-flex justify-content-center" id="products">
+                <input disabled type="text">
+                <button class="btn btn-warning" type="submit"><i class="bi bi-radioactive"></i></button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

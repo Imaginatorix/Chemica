@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Lewis Structure Generator
+{% endblock %}
+
+{% block body %}
+    <div class="my-auto mx-auto" style="width: 90%;">
+        <form action="/lewis" class="d-flex justify-content-center mb-3" method="post">
+            <input name="compound" placeholder="PCl5" required type="text">
+            <button class="btn btn-warning" type="submit"><i class="bi bi-radioactive"></i></button>
+        </form>
+        {% if compound is defined %}
+            <div class="text-center">
+                <image src="/lewis_api/{{ compound }}" alt="loading error" width="30%" height="30%"></image>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
