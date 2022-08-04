@@ -2,6 +2,9 @@
 **Version 1.0.0**
 ## A simple chemical reaction calculator website
 
+### Video Demo:
+https://youtu.be/XwiljT8qiPI
+
 ### Join Info:
 https://chemica-chemcal.herokuapp.com/
 
