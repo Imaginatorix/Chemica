@@ -1,12 +1,16 @@
+![](banner.png)
 # Chemica - Chemical Engine
 **Version 1.0.0**
 ## A simple chemical reaction calculator website
 
-### Video Demo:
+### Video Demo
 https://youtu.be/XwiljT8qiPI
 
-### Join Info:
+### Join Info
 https://chemica-chemcal.herokuapp.com/
+
+### Description
+Chemica is a simple chemical calculation website, the main purpose of which is to predict the product of the reaction given only the reactants. Aside from this, it also tries to give the representation of the reagents, currently only Lewis Dot Structure. Other functionalities include naming the reagent and balancing the equation.
 
 ### Motivation of Project
 I've been a watching a lot of NileRed's youtube channel for a time now and, with the combination of my 9th Grade Chemistry Teacher's enthusiasm in teaching, I found myself wanting to try and create several compounds with interesting properties. I've never been in a Chem lab personally, so I can only imagine. This "craving" for combining several compounds gave me the thought of a chemical reaction predictor, the main purpose of which is to test a set of reactants and find the respective product that reflects to the real world. There are several reasons why I want to realize this thought.
@@ -58,7 +62,7 @@ This project utilizes three main dependencies:\
 (d) Balance Reaction (via chempy)
 - (i) Use chempy's chemistry.balance_stoichiometry method
 
-### Decisions:
+### Decisions
 (a) API
 Initially, I thought of using an online API and just query for the information. By implementing so, I won't personally be needing to update the information. What I had in mind was something like [this](https://github.com/neelpatel05/periodic-table-api-go), fast and reliable. However, I changed my mind when I found some well-established libraries, such as [mendeleev](https://mendeleev.readthedocs.io/en/stable/quick.html), which are generally a lot faster than querying. The problem is, I will be needing to update it from time to time because it is downloaded (although with the help of github, I don't think that's much of a problem).
 
@@ -68,14 +72,14 @@ I chose to create a website instead of an app as I think it would be better if t
 (c) Predictor Procedure
 I wanted to make this process as generalized as possible. However, on my 'research,' I wasn't able to find such way. For now, I went with the identify -> predict apporach, which is pretty limited and sometimes incorrect, but that'll do for now. See Known Issues (a).
 
-### Plans on the future:
+### Plans on the future
 (a) Type of procedure the reactants will go through
 (b) Properties of the chemicals
 (c) Uses of the chemicals
 (d) Visualizations of molecules - [might be useful](https://stackoverflow.com/questions/65187916/using-glowscript-to-create-widgets-and-graphics-in-different-divs)
 (e) Fix Issues
 
-### Known Issues:
+### Known Issues
 (a) The prediction process is not very generalized, making some combinations unpredictable or wrongly predicted.
 (b) Considers each element in the polyatomic atom as different or can't identify polyatomic atoms.
 (c) Can't distinguish between ionic and covalent bonding in Lewiss Structure.
